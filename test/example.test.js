@@ -98,7 +98,7 @@ test('subtract should take in 10 - -10 and return 20', (expect) => {
 
 	//Act
 	// Call the function you're testing and set the result to a const
-	const actual = subtract(-10, 10);
+	const actual = subtract(10, -10);
 
 	//Expect
 	// Make assertions about what is expected versus the actual result
@@ -127,6 +127,49 @@ test('subtract should take in 12 - 16 and return -4', (expect) => {
 	//Act
 	// Call the function you're testing and set the result to a const
 	const actual = subtract(12, 16);
+
+	//Expect
+	// Make assertions about what is expected versus the actual result
+	expect.equal(actual, expected);
+});
+
+//divide TESTS:
+test('divide should take in 10 / -10 and return -1', (expect) => {
+	//Arrange
+	// Set up your arguments and expectations
+	const expected = -1;
+
+	//Act
+	// Call the function you're testing and set the result to a const
+	const actual = divide(10, -10);
+
+	//Expect
+	// Make assertions about what is expected versus the actual result
+	expect.equal(actual, expected);
+});
+
+test('divide should take in "25" / 4 and return 6.25', (expect) => {
+	//Arrange
+	// Set up your arguments and expectations
+	const expected = 6.25;
+
+	//Act
+	// Call the function you're testing and set the result to a const
+	const actual = divide('25', 4);
+
+	//Expect
+	// Make assertions about what is expected versus the actual result
+	expect.equal(actual, expected);
+});
+
+test('divide should take in 0 / 12 and return 0', (expect) => {
+	//Arrange
+	// Set up your arguments and expectations
+	const expected = 0;
+
+	//Act
+	// Call the function you're testing and set the result to a const
+	const actual = divide(0, 12);
 
 	//Expect
 	// Make assertions about what is expected versus the actual result
